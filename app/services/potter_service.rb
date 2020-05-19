@@ -1,6 +1,9 @@
 class PotterService
 
-  def members
+  def members(url)
+    get_json(url).map do |info|
+      Member.new(info)
+    end
   end
 
   private

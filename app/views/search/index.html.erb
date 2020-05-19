@@ -1,0 +1,19 @@
+<h1> Total Members: </h1>
+  <%= @members.count %>
+
+<h1> Member Info </h1>
+<% @members.each do |member| %>
+  <section class='member'>
+    <h4><%= member.name %></h4><br>
+      <h4> House: </h4>
+        <%= member.house %>
+      <% if member.role %>
+      <h4> Role: </h4>
+        <%= member.role %>
+      <% end %>
+      <% if member.patronus %>
+      <h4> Patronus: </h4>
+       <%= member.patronus %><br />
+      <% end %>
+  </section>
+<% end %>
