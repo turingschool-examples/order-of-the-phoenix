@@ -1,0 +1,13 @@
+<h1>There are <%= @members.count%> Order of Phoenix members in <%= @house %></h1>
+<% @members.each do |member| %>
+  <%= member.name %>
+  <%= member.house %>
+  <%= member.alias %>
+  <%= member.animagus %>
+  <%= member.ministry_of_magic %>
+  <%= member.order_of_the_phoenix %>
+  <%= member.dumbledores_army %>
+  <%= member.death_eater %>
+  <%= member.blood_status %>
+  <%= member.species %>
+<% end %>
